@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "name":"女王价到",
+        "price":"购物抽奖赢免单",
+        "url":"https://fms.res.meizu.com/dms/2020/03/02/a3cbc1bf-cc8d-4dcb-a97b-34e893eff2a1.png"
+    },
+    {
+        "id":2,
+        "name":"魅族16T",
+        "price":"大屏强芯 持久续航",
+        "url":"https://fms.res.meizu.com/dms/2019/11/21/0ba66466-d66b-402d-9c9e-4e8a62077f0a.png"
+    },
+    {
+        "id":3,
+        "name":"魅族 16Xs",
+        "price":"限时优惠",
+        "url":"https://fms.res.meizu.com/dms/2020/03/02/67ea8f8a-1d4f-4e7f-a208-4c76919eac77.png"
+    },
+    {
+        "id":4,
+        "name":"mCycle",
+        "price":"以旧换新",
+        "url":"https://fms.res.meizu.com/dms/2019/04/28/552f6669-8652-4f78-a122-4866d2f7d25c.jpg"
+    }
+]

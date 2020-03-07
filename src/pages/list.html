@@ -1,11 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../lib/swiper-5.3.1/package/css/swiper.min.css">
+    <script src="../lib/jquery/dist//jquery.min.js"></script>
+
 </head>
+
 <body>
+    <div class="banner container">
+        <!-- 导航栏 -->
+        <div class="dh">
+            <ul>
+            </ul>
+        </div>
+        <div class="erdh">
+            <ul>
+
+            </ul>
+        </div>
+
+        <!-- 轮播图 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img
+                        src="https://fms.res.meizu.com/dms/2020/02/28/8e9cd402-a866-4cd0-b2b4-a12e3971f53b.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://fms.res.meizu.com/dms/2020/02/25/2fed7b7e-5c69-44ef-afcc-1043594033c5.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://fms.res.meizu.com/dms/2020/02/21/cc006909-fb15-4413-b95d-904f54708a77.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://fms.res.meizu.com/dms/2020/01/03/33073075-c689-4ca3-b6b4-c1a8d31b6381.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://fms.res.meizu.com/dms/2020/02/26/4d4e07db-7d69-4003-938e-7baf9310bfa0.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://fms.res.meizu.com/dms/2020/02/05/540fd3b9-b001-473d-aa4e-d8945959794d.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://fms.res.meizu.com/dms/2020/02/05/e6ee44a3-0952-4a0c-8cf9-deba0a07f906.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://fms.res.meizu.com/dms/2020/02/23/d436dc23-88af-49a8-9ed7-eb68868fdd55.jpg" alt="">
+                </div>
+
+
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+     
+        </div>
+
+    </div>
+    <script src="../lib/swiper-5.3.1/package/js/swiper.min.js"></script>
+    <!-- 轮播图 导航JS -->
+    <script>
+        // <!-- 轮播图 -->      
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+            autoplay: {
+                delay: 3000
+            },
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            //   navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            //   },
+
+            //   // 如果需要滚动条
+            //   scrollbar: {
+            //     el: '.swiper-scrollbar',
+            //   },
+        })
+
+        // 导航
+        getList()
+        
+        function getList() {
+           
+            $.ajax({
+                url: '../lib/tou.json',
+                dataType: 'json',
+                success: function (res) {
+                    // console.log(res)
+               
+                    let str = ''
+
+                 
+                    res.forEach(item => {
+                        str += `<li><a href="detail.html">${item.name}</a></li>`
+                    })
+
+                   
+                    $('.dh > ul')
+                        .html(str)
+                        .children('li') // 找到所有的一级菜单下的 li
+                        .on('mouseover', function () {
+                            // 5-1. 知道自己移入的时哪一个 li
+                            const index = $(this).index()
+                            // 5-2. 找到要渲染的数组
+                            const list = res[index].list
+
+                            if (!list) {
+                                $('.erdh').stop().slideUp()
+                                return
+                            }
+                           
+                            let str = ''
+
+                            // 5-4. 进行组装
+                            list.forEach(item => {
+                                str += `
+                                  <li>
+                                    <div>
+                                      <img src="${ item.list_url}" alt="">
+                                    </div>
+                                    <p class="title">${ item.list_name}</p>
+                                    <span class="price">￥${ item.list_price}</span>
+                                  </li>
+                                `
+                            })
+
+                          
+                            $('.erdh > ul').html(str)
+                            $('.erdh').stop().slideDown()
+                        })
+
+                    $('.erdh')
+                        .on({
+                            mouseover: function () { $(this).finish().show() },
+                            mouseout: function () { $(this).finish().slideUp() }
+                        })
+                }
+            })
+        }
+    </script>
+
+    <!-- 内容 -->
+    <div class="nr">
+        <ul>
+        </ul>
+    </div>
+
+    <script>
+        let list=[]
+        
+        getList()
+        function getList(){
+            $.ajax({
+                url:'../lib/list.json',
+                dataType:'json',
+                success:function(res){
+                    // console.log(res)
+                    let str =''
+
+                    res.forEach(item=>{
+                        str += `
+                        <li data-id="${item.id}">
+                            <div><img src="${item.url}" alt=""></div>
+                            <p class="title">${item.name}</p>
+                            <p class="deploy">${item.title}</p>
+                            <span class="price">￥${item.price}</span>
+                        </li>
+                        `
+                    })
+                    $('.nr > ul').html(str)
+                    list = res
+                    // console.log(list)
+                }
+            })
+        }
+
     
+
+        $('.nr > ul').on('click','li',function(){
+            // console.log(this)
+            const id = $(this).data('id')
+            let data = null
+            for(let i = 0; i < list.length; i++){
+                if(list[i].id == id){
+                    data = list[i]
+                    break
+                }
+            }
+            // console.log(data)
+           localStorage.setItem('goodsInfo',JSON.stringify(data))
+
+           window.location.href='./detail.html'
+        })
+    </script>
 </body>
 </html>

@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+  }
+  
+
+body{
+    margin: 0 auto;
+    width: 1393px;
+    background-color: #f4f4f4;
+}
+
+.banner{
+    width: 100%;
+    position: relative;
+}
+
+/* 导航栏 */
+.banner .dh{
+    position: absolute;
+    width: 100%;
+    height: 82px;
+    z-index: 999;
+}
+
+.banner .dh ul{
+    width: 70%;
+    padding-left: 30%;
+    color:#999;
+}
+
+.banner .dh ul li{
+    float: left;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 82px;
+}
+
+.banner .dh ul:hover{
+    color: black;
+}
+
+.banner .erdh{
+    width: 100%;
+    padding-top: 82px;
+    height: 183px;
+    display: none;
+    position: absolute;
+    z-index: 998;
+    background-color: white;
+}
+
+.banner .erdh ul{
+    display: flex;
+}
+
+.banner .erdh ul li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner .dh ul li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .erdh ul li div img {
+    width: 120px;
+    height: 120px;
+}
+
+
+
+/* 轮播图 */
+.banner .swiper-container .swiper-wrapper .swiper-slide{
+    position: relative;
+    overflow: hidden;
+}
+.banner .swiper-container .swiper-wrapper .swiper-slide img {
+    /* position: absolute; */
+    left: 20%;
+    top: 0;
+    transform: translateX(-20%);
+}
+
+.nr{
+    width: 100%;
+}
+
+.nr ul{
+    width: 100%;
+
+}
+
+.nr ul li{
+    float: left;
+    width: 30%;
+    height: 556px;
+    position: relative;
+    margin-top:20px;
+    margin-left: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-color: white;
+    border: 1px solid white;
+    box-sizing: border-box;
+    
+}
+
+.nr ul li:hover{
+    box-shadow:0px 0px 40px -20px #000;
+
+}
+
+
+.nr ul li div img{
+    width: 320px;
+    height: 320px;
+}
+
+.nr ul li .title{
+    color: #333;
+    font-size: 23px;
+}
+
+.nr ul li .deploy{
+    font-size: 16px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    color: #666;
+}
+
+.nr ul li .price{
+    color: red;
+    font-size: 28px;
+}

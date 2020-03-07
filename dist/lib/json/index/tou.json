@@ -1,0 +1,182 @@
+[
+    {
+        "id":1,
+        "name":"手机",
+        "list":[
+            {
+                "list_id":101,
+                "list_name":"魅族 16T",
+                "list_price":"1999",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/7A/Cgbj0V2upxqANyVFAAjApUYA58w668.png@240x240.jpg"
+            },
+            {
+                "list_id":102,
+                "list_name":"魅族 16s Pro",
+                "list_price":"2699",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/48/Cgbj0F1jhu-AaV4AAAlk4z4lkt0463.png@240x240.jpg"
+            },
+            {
+                "list_id":103,
+                "list_name":"魅族 16Xs",
+                "list_price":"1499",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/2C/Cgbj0FzvRI6AWu1jAAxIbnS8M5Q295.png@240x240.jpg"
+            },
+            {
+                "list_id":104,
+                "list_name":"魅族 16s",
+                "list_price":"2699",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/15/Cgbj0Fy9c0KAXyeaAAa7nrDVZiw073.png@240x240.jpg"
+            },
+            {
+                "list_id":105,
+                "list_name":"魅族 Note9",
+                "list_price":"1199",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/12/Cgbj0Vx_ZK6AaEObAAa1DJqn7us376.png@240x240.jpg"
+            },
+            {
+                "list_id":106,
+                "list_name":"魅族 16th",
+                "list_price":"1598",
+                "list_url":"https://openfile.meizu.com/group1/M00/05/E2/Cgbj0FtqgnmAFgJPAAhgnScaoFg724.png@240x240.jpg"
+            },
+            {
+                "list_id":107,
+                "list_name":"魅族 16X",
+                "list_price":"1098",
+                "list_url":"https://openfile.meizu.com/group1/M00/06/BC/Cgbj0FvINLWACd0AAAh2dGv5_R0516.png@240x240.jpg"
+            },
+            {
+                "list_id":108,
+                "list_name":"魅族 X8",
+                "list_price":"1298",
+                "list_url":"https://openfile.meizu.com/group1/M00/06/A9/Cgbj0FusSK2AQZgiAAlFKHoO-co889.png@240x240.jpg"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "name":"声学",
+        "list":[
+            {
+                "list_id":201,
+                "list_name":"魅族 头戴蓝牙",
+                "list_price":"449",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/78/Cgbj0V2unT2ACCMdAAjdK9xe2cI340.png@240x240.jpg"
+            },
+            {
+                "list_id":202,
+                "list_name":"魅族 高端耳机",
+                "list_price":"200",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/4D/Cgbj0F1l7zeAFyLsAAZJk_cF8Tk126.png@240x240.jpg"
+            },
+            {
+                "list_id":203,
+                "list_name":"魅族 EP3C耳机",
+                "list_price":"109",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/63/Cgbj0V1l2ieAYKJGAAHMHuLWRMo374.png@240x240.jpg"
+            },
+            {
+                "list_id":204,
+                "list_name":"魅族 HiFi耳机",
+                "list_price":"249",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/4C/Cgbj0F1l4LyAR44oAAJKhE-uRA8619.png@240x240.jpg"
+            },
+            {
+                "list_id":205,
+                "list_name":"魅族 真无限蓝牙",
+                "list_price":"349",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/28/Cgbj0Vy9Jq6AEzhMAApuih_4TPw329.png@240x240.jpg"
+            },
+            {
+                "list_id":206,
+                "list_name":"魅族 无线降噪耳机",
+                "list_price":"339",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/10/Cgbj0Fy9JYOACw2DAAMWf3vEhbA886.png@240x240.jpg"
+            },
+            {
+                "list_id":207,
+                "list_name":"魅族 HiFi解码耳放",
+                "list_price":"449",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/2F/Cgbj0Vy_C3GAN_TKAAExaPfTwFc180.png@240x240.jpg"
+            },
+            {
+                "list_id":208,
+                "list_name":"魅族 EP2C耳机",
+                "list_price":"129",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/29/Cgbj0FzvN5eAOhF_AAG4VJC6XfM942.png@240x240.jpg"
+            }
+        ]
+    },
+    {
+        "id":3,
+        "name":"配件",
+        "list":[
+            {
+                "list_id":301,
+                "list_name":"魅族 移动电源",
+                "list_price":"79",
+                "list_url":"https://openfile.meizu.com/group1/M00/06/92/Cgbj0VugrWKAXgQoAALx033SuQ0691.png@240x240.jpg"
+            },
+            {
+                "list_id":302,
+                "list_name":"魅族 路由器",
+                "list_price":"199",
+                "list_url":"https://storeimg.meizu.com/product/1465698264-58364.jpg@240x240.jpg"
+            },
+            {
+                "list_id":303,
+                "list_name":"魅族 电源适配器",
+                "list_price":"69",
+                "list_url":"https://storeimg.meizu.com/product/1467170145-52479.png@240x240.jpg"
+            },
+            {
+                "list_id":304,
+                "list_name":"魅族 壳膜套装",
+                "list_price":"39",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/64/Cgbj0F2uq9aAXMT6AAcqvIHVuH4818.png@240x240.jpg"
+            },
+            {
+                "list_id":305,
+                "list_name":"魅族 16T壳膜套装",
+                "list_price":"39",
+                "list_url":"https://openfile.meizu.com/group1/M00/07/4C/Cgbj0F1l5xmAexI-AAdETGR3gj4619.png@240x240.jpg"
+            },
+            {
+                "list_id":306,
+                "list_name":"魅族 金属数据线",
+                "list_price":"39",
+                "list_url":"https://openfile.meizu.com/group1/M00/00/1E/CnQOjVef_HaAaD-bAAHXId4TWtA165.png@240x240.jpg"
+            },
+            {
+                "list_id":307,
+                "list_name":"魅族 USB数据线",
+                "list_price":"29",
+                "list_url":"https://storeimg.meizu.com/product/1458617159-29477.png@240x240.jpg"
+            },
+        ]
+    },
+    {
+        "id":4,
+        "name":"生活"
+    },
+    {
+        "id":5,
+        "name":"Flyme"
+    },
+    {
+        "id":6,
+        "name":"服务"
+    },
+    {
+        "id":7,
+        "name":"专卖店"
+    },
+    {
+        "id":8,
+        "name":"社区"
+    },
+    {
+        "id":9,
+        "name":"app下载"
+    },
+]
